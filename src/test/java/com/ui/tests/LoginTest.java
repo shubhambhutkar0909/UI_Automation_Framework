@@ -19,16 +19,14 @@ public class LoginTest extends TestBase {
 
 	Logger logger = LogManager.getLogger(this.getClass());
 
-	/*Adding comment to check
-	 * @Test(description = "Verifies Valid User able to Login to application",
-	 * groups = { "e2e", "sanity" }, dataProviderClass =
-	 * com.ui.dataprovider.LoginDataProvider.class, dataProvider =
-	 * "LoginTestJSONDataProvider", retryAnalyzer =
-	 * com.ui.listeners.MyRetryAnalyzer.class) public void loginTest(User user) {
-	 * 
-	 * assertEquals(homePage.goToLoginPage().doLogin(user.getEmailAddress(),
-	 * user.getPassword()).getUserName(), "Shubham B"); }
-	 */
+	@Test(description = "Verifies Valid User able to Login to application", groups = { "e2e",
+			"sanity" }, dataProviderClass = com.ui.dataprovider.LoginDataProvider.class, dataProvider = "LoginTestJSONDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
+	public void loginTest(User user) {
+
+		assertEquals(homePage.goToLoginPage().doLogin(user.getEmailAddress(), user.getPassword()).getUserName(),
+				"Shubham B");
+	}
+
 	@Test(description = "Verifies Valid User able to Login to application", groups = { "e2e",
 			"sanity" }, dataProviderClass = com.ui.dataprovider.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider")
 	public void loginCSVTest(User user) {
