@@ -1,17 +1,8 @@
-{ 
-
-	"data":[ 
-		{ 
-			"emailAddress":"shubham1@gmail.com",
-			"password":"password"
-		
-		},
-		{ 
-			"emailAddress":"tatixe6641@owlny.com",
-			"password":"Password"
-		
-		}
-		
-	]
-
+{
+  "data": [
+    {
+      "emailAddress": "tatixe6641@owlny.com",
+      "password": "Password"
+    }
+  ]
 }
