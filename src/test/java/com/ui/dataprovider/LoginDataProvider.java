@@ -22,7 +22,7 @@ public class LoginDataProvider {
 	public Iterator<Object[]> loginDataProvider() {
 
 		Gson gson = new Gson();
-		File testDataFile = new File(System.getProperty("user.dir") + "\\testdata\\logindata.json");
+		File testDataFile = new File(System.getProperty("user.dir") + "/testdata/logindata.json");
 		FileReader fileReader = null;
 		try {
 			fileReader = new FileReader(testDataFile);
