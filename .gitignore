@@ -1,1 +1,23 @@
-/target/
+# Ignore target directory (Maven build output)
+target/
+
+# Ignore logs and temporary files
+*.log
+logs/
+*.tmp
+
+# Ignore Eclipse/IntelliJ IDEA project files
+*.iml
+.idea/
+*.classpath
+*.project
+*.settings/
+
+
+# Ignore test reports
+test-output/
+surefire-reports/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
